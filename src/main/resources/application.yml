@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+webservices:
+  datasource:
+    one:
+      host: http://localhost:8080
+      service: ${webservices.datasource.one.host}/animes/testEfect
+    two:
+      host: http://localhost:8081
+      service: ${webservices.datasource.two.host}/animes/testEfect
