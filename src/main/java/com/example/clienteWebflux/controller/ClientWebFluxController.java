@@ -19,6 +19,16 @@ public class ClientWebFluxController {
     private final ClientWebfluxService clientWebfluxService;
     @GetMapping
     public List<Anime> getAllAnimesFromSources(){
-        return clientWebfluxService.getAnimes();
+        return clientWebfluxService.getAllAnimes();
+    }
+
+    @GetMapping("/datasourceOne")
+    public List<Anime> getAnimesFromDatasourceOne(){
+        return clientWebfluxService.getAnimesDatasourceOne();
+    }
+
+    @GetMapping("/datasourceTwo")
+    public List<Anime> getAnimesFromDatasourceTwo(){
+        return clientWebfluxService.getAnimesDatasourceTwo();
     }
 }

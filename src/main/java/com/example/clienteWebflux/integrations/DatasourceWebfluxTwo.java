@@ -1,6 +1,6 @@
 package com.example.clienteWebflux.integrations;
 
-import com.example.clienteWebflux.dto.GenericDatasourceResponse;
+import com.example.clienteWebflux.dto.Anime;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -10,6 +10,6 @@ import java.util.List;
 public interface DatasourceWebfluxTwo {
 
     @GetMapping
-    List<GenericDatasourceResponse> getAnimes();
+    List<Anime> getAnimes();
 
 }
